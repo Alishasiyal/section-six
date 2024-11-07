@@ -1,0 +1,38 @@
+/* Section Six */
+.bg-img {
+  background-image: url(pexels-ketut-subiyanto-4933612.jpg);
+  height: 700px;
+  width: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sliders Css */
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.slider {
+  display: inline-flex;
+  animation: scrollLeft 14s linear infinite;
+}
+
+.slider img {
+  width: 150px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
